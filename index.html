@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+      <title>Advancing text</title>
+      <meta name="viewport" 
+      content="width=device-width,initial-scale=1.0">
+      <meta name="author" content="Vinayak Nautiyal">
+      <style>
+
+       #advancingcss{
+           font-family:sans-serif,serif;
+           color:blue;
+           padding:10%;
+           font-size:140%;
+           background-color:yellow;
+       }
+       #cssatitsmax{
+           font-family:verdana,-apple-system,arial,sans-serif,serif;
+           color:lime;
+           padding:20%;
+           font-size:140%;
+           background-image:linear-gradient(70deg,green,maroon);
+           border: 2px solid black;
+       }
+       #cssatitsmax:hover{
+           animation-name:crazy;
+           animation-duration:0.5s;
+           animation-timing-function:linear;
+           animation-iteration-count:infinite;
+       }
+       @keyframes crazy{
+           from{font-size:140%;padding:20%;color:red;border:2px solid black}
+           to{font-size:230%;padding:30%;color:blue;border:10px solid black}
+       }
+       #cssatitsmax:active{
+           background-image:linear-gradient(50deg,yellow,orange);
+       }
+       #orders{
+           background-color:red;
+           font-family:arial,sans-serif,serif;
+       }
+       .headtext,.descriptiontext{
+           font-family:arial;
+       }
+      </style>
+
+    </head>
+    <body style="background-color:darkblue;">
+      <h1 class="headtext">Advancing text</h1>
+      <p class="descriptiontext">The text becomes 
+      more advanced</p>
+      <br>
+      Hi!
+      <br>
+      <br>
+      <span>Hi!</span>
+      <br>
+      <br>
+      <span><b>Hi!</b></span>
+      <p id="text"><b>Hi!</b></p>
+      <p id="advancingtext" class="texts"><b><em>Hi!</em></b></p>
+      <p id="fontingtext" class="texts"><b><em><tt>Hi!</tt></em></b></p>
+      <p id="inlinestyled" class="texts" style="color:red;"><b><em><tt>Hi!</tt></em></b></p>
+      <p id="fontbystyle" class="texts" style="font-family:sans-serif;color:green"><em><b>Hi!</b></em></p>
+      <p id="advancingcss" class="texts" style="/*I am not inline*/"><em><b>Hi!</b></em></p>
+      <p id="cssatitsmax" class="texts" style="/*I am not inline*/"><em><b><strike><u>Hi!</u></strike></b></em></p>
+      <ol id="orders">
+          <li><q>Hi!</q> written in no proper tags for texts, its parent is the body tag, no text element tag for it.</li>
+          <li><q>Hi!</q> written in span element with no internal tags, formatting and attributes.</li>
+          <li><q>Hi!</q> written in span element with no attributes but b tag for bold output.</li>
+          <li><q>Hi!</q> written in p element with bold formatting and the p element has got an id attribute.</li>
+          <li><q>Hi!</q> written in p element with itallics and bold formatting. Also assigned to a class which also the sample texts after it will have.</li>
+          <li><q>Hi!</q> written with p element, formatting of the previous sample text and monospace font with tt tag.</li>
+          <li><q>Hi!</q> with inline css color property set to red. Also got the formatting of the previous sample text.</li>
+          <li><q>Hi!</q> with green color, sans-serif font nd previous sample text's formatting.</li>
+          <li><q>Hi!</q> now styled within the style tags, background, blue color and padding, a fallback font. Also got the previous sample text's formats.</li>
+          <br>
+          <li><q>Hi!</q> with active and hover effects. Animation for hover, gradient backgrounds and all 4 types of formatting (bold,itallics,underline,striketrough). It is so crazy!</li>
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
